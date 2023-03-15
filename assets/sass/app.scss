@@ -1,0 +1,22 @@
+// Variables
+@import "./variables";
+
+// Mixins
+@import "./mixins";
+
+// Design
+@import "./buttons";
+@import "./colors";
+
+// Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
+
+// styles
+@import "./global";
+@import "./main";
+
+// Bootstrap Overrides
+@import "./bootstrap-overrides";
+
+// Variables
+@import "./navbar";

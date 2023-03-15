@@ -1,0 +1,345 @@
+body {
+	overflow-x: hidden!important;
+	background: #F9FAFF;
+}
+
+/********Global Css*********/
+.font-serif {
+	font-family: sans-serif!important;
+}
+
+.letter-spacing-05 {
+	letter-spacing: 0.5px!important;
+}
+
+.letter-spacing-1 {
+	letter-spacing: 1px!important;
+}
+
+
+/****** Banner Section ******/
+
+.top-banner-bg {
+	background-image: url('../../public/images/png/maze-bg.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-color: $white;
+	border-bottom: 8px solid $primary;
+    padding-bottom: 20px!important;
+	.main-title {
+		@include media-breakpoint-only(md) {
+			font-size: 3rem!important;
+		}
+		@include media-breakpoint-only(sm) {
+			font-size: 2.5rem!important;
+		}
+		@include media-breakpoint-down(xs) {
+			font-size: 2rem!important;
+		}
+	}
+	.main-sub-title {
+		@include media-breakpoint-down(xs) {
+			font-size: 0.75rem!important;
+		}
+	}
+}
+
+
+/**************** HomePage Form Section Css ****************/
+.main-sub-title {
+	border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+}
+
+
+.custom-top-padding {
+	padding: 80px 0 0;
+}
+
+.left-form-section {
+	.form-card {
+		// border-radius: 30px;
+		// border: 3px solid #005C9B;
+		// background-color: $white;
+		.form-control {
+			background-color: #CCCCCC;
+			color: $primary;
+			text-align: center;
+			border-radius: 6px;
+			border-color: #CCCCCC;
+			font-family: 'VAG-Rounded-Light';
+			letter-spacing: 0.5px;
+			font-size: 16px;
+			height: calc(1em + 0.75rem + 2px);
+		}
+		.custom-control-input{
+			&:focus {
+				~.custom-control-label {
+					&::before {
+						box-shadow: none;
+						border-color: #819FB8;
+					}
+				}
+			}
+		}
+		.custom-control-label {
+			color: $primary;
+			&::before {
+				background-color: #819FB8;
+				border-color: #819FB8;
+				top: 0.05rem;
+			}
+		}
+		.btn {
+			border-radius: 6px;
+			border: 1.5px solid white;
+			box-shadow: 0px 0px 10px 0px #8e8e8e;
+		}
+	}
+}
+
+
+/**************** Site Preloader *****************/
+.site-preloader {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+	background: #fff;
+	.animation-preloader {
+		position: absolute;
+		z-index: 100;
+		.spinner {
+			animation: spinner 1s infinite linear;
+			border-radius: 50%;
+			border: 5px solid rgba(9, 29, 61, .15);
+			border-top-color: #091d3d;
+			height: 150px;
+			margin: 0 auto 45px auto;
+			width: 150px;
+		}
+		.txt-loading {
+			text-align: center;
+			user-select: none;
+			.letters-loading{
+				font-family: Lato, sans-serif;
+				font-weight: 700;
+				letter-spacing: 2px;
+				display: inline-block;
+				color: rgba(9, 29, 61, .15);
+				position: relative;
+				font-size: 25px;
+				line-height: 0;
+				&:before {
+					animation: letters-loading 4s infinite;
+					color: #091d3d;
+					content: attr(data-text-preloader);
+					left: 0;
+					opacity: 0;
+					top: 0;
+					line-height: 0;
+					position: absolute;
+				}
+				&:nth-child(2):before {
+					animation-delay: .2s
+				}
+				&:nth-child(3):before {
+					animation-delay: .4s
+				}
+				&:nth-child(4):before {
+					animation-delay: .6s
+				}
+				&:nth-child(5):before {
+					animation-delay: .8s
+				}
+				&:nth-child(6):before {
+					animation-delay: 1s
+				}
+				&:nth-child(7):before {
+					animation-delay: 1.2s
+				}
+				&:nth-child(8):before {
+					animation-delay: 1.4s
+				}
+				&:nth-child(9):before {
+					animation-delay: 1.6s
+				}
+				&:nth-child(10):before {
+					animation-delay: 1.8s
+				}
+				&:nth-child(11):before {
+					animation-delay: 2.0s
+				}
+			}
+		}
+	}
+}
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+@keyframes letters-loading {
+    0%,
+    100%,
+    75% {
+        opacity: 0;
+        transform: rotateY(-90deg)
+    }
+    25%,
+    50% {
+        opacity: 1;
+        transform: rotateY(0)
+    }
+}
+
+@media screen and (max-width:767px) {
+    .site-preloader {
+		.animation-preloader {
+			.spinner {
+				height: 8em;
+				width: 8em
+			}
+		} 
+	} 
+}
+
+@media screen and (max-width:500px) {
+    .site-preloader {
+		.animation-preloader {
+			.spinner {
+				height: 7em;
+				width: 7em;
+				margin: 0 auto 20px;
+			}
+			.txt-loading {
+				.letters-loading {
+					font-size: 20px;
+					letter-spacing: 0;
+				}
+			} 
+		} 
+	} 
+}
+
+
+/*************** Scroll To Top ****************/
+.scrollToTop {
+	background: $white;
+	bottom: 1rem;
+	display: none;
+    height: 45px;
+    padding: 8px;
+    position: fixed;
+    right: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    z-index: 99999;
+	border-radius: 50%;
+	box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.14);
+	i {
+		color: $primary;
+		font-size: 1.5rem;
+		vertical-align: middle;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/**************** Tabs Section Css ****************/
+
+.custom-nav-tabs-section {
+	.custom-nav-tabs-div {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: $primary;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.custom-nav-tabs-wrapper {
+			@include media-breakpoint-down(sm) {
+				border: 0!important;
+			}
+			.custom-nav-tabs {
+				&.nav-pills {
+					flex-wrap: nowrap;
+					overflow: auto;
+					white-space: nowrap;
+					width: 100%;
+					padding-bottom: 10px!important;
+					&::-webkit-scrollbar-thumb,
+					&::-webkit-scrollbar-track {
+						background: transparent; 
+					}
+				}
+				.nav-item {
+					a {
+						font-size: 16px;
+						&.nav-link {
+							color: $primary;
+							transition: .3s ease-out;
+							box-shadow: #bebebe 2px 2px 8px 0px;
+							background: $white;
+							width: 165px;
+						}
+						&.nav-link {
+							&.active {
+								color: $white;
+								position: relative;
+								background: $primary;
+								// &:after {
+								// 	content: '';
+								// 	border-bottom: 3px solid $primary;
+								// 	display: block;
+								// 	position: absolute;
+								// 	bottom: -10px;
+								// 	width: 100%;
+								// 	margin: 0 auto;
+								// 	left: 0;
+								// 	right: 0;
+								// }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// .tab-content {
+	// 	.tab-pane {
+	// 		&.active {
+	// 			animation: slide-down .4s ease-out;
+	// 		}
+	// 	}
+	// }
+}
+
+// @keyframes slide-down {
+//     0% { opacity: 0; transform: translateX(100%); }
+//     100% { opacity: 1; transform: translateX(0); }
+// }
+
+
+/**************** Footer Section Css ****************/
+footer {
+	.footer-texts {
+		font-size: 20px;
+		color: #A2A2A2;
+		margin: 0;
+		line-height: 26px;
+	}
+}

@@ -1,0 +1,223 @@
+/************************ VAG Rounded Font *********************/
+/* VAG Rounded Thin */
+@font-face {
+  font-family: 'VAG-Rounded-Thin';
+  src: url('../../assets/fonts/vag-rounded/VAGRoundedStd-Thin.otf');
+}
+
+/* VAG Rounded Light */
+@font-face {
+  font-family: 'VAG-Rounded-Light';
+  src: url('../../assets/fonts/vag-rounded/VAGRoundedStd-Light.otf');
+}
+
+/* VAG Rounded Bold */
+@font-face {
+  font-family: 'VAG-Rounded-Bold';
+  src: url('../../assets/fonts/vag-rounded/VAGRoundedStd-Bold.otf');
+}
+
+.vag-r-thin {
+  font-family: 'VAG-Rounded-Thin';
+}
+
+.vag-r-light {
+  font-family: 'VAG-Rounded-Light';
+}
+
+.vag-r-bold {
+  font-family: 'VAG-Rounded-Bold';
+}
+
+/************************ Zurch Font *********************/
+/* VAG Rounded Thin */
+@font-face {
+  font-family: 'Zurch-Regular';
+  src: url('../../assets/fonts/zurch/ZURCH.TTF');
+}
+
+.zurch-r {
+  font-family: 'Zurch-Regular';
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  line-height: 1;
+  font-size: .875rem;
+  font-family: 'Arial';
+  opacity: 1;
+  transition: 1s opacity;
+  line-height: 24px;
+	color: #333;
+	background-color: $white;
+}
+
+::-moz-selection {
+  background: rgba($primary, 0.2);
+}
+
+::selection {
+  background: rgba($primary, 0.2);
+}
+
+.line-height-12 {
+  line-height: 1.2!important;
+}
+
+.line-height-13 {
+  line-height: 1.3!important;
+}
+
+.line-height-1 {
+  line-height: 1!important;
+}
+
+
+/********** New Css **********/
+
+.resize-none {
+  resize: none!important;
+}
+
+.custom-container {
+  @include media-breakpoint-up(md) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.title-color {
+  color: #212121!important;
+}
+
+.font-7 {
+  font-size: 7px!important;
+}
+
+.font-9 {
+  font-size: 9px!important;
+}
+
+.font-10 {
+  font-size: 10px!important;
+}
+
+.font-14 {
+  font-size: 0.875rem!important;
+}
+
+.font-16 {
+  font-size: 1rem!important;
+}
+
+.font-17 {
+  font-size: 1.063rem!important;
+}
+
+.font-18 {
+  font-size: 1.125rem!important;
+}
+
+.font-20 {
+  font-size: 1.25rem!important;
+}
+
+.font-36 {
+  font-size: 2.25rem!important;
+}
+
+.font-54 {
+  font-size: 3.375rem!important;
+}
+
+.font-60 {
+  font-size: 3.75rem!important;
+}
+
+.font-64 {
+  font-size: 4rem!important;
+}
+
+.custom-border {
+  border: 1px solid #DFDFEC!important;
+}
+
+.font-smooth {
+  //-webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+select {
+  &.form-control {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+/********** New Css Ends **********/
+
+
+select {
+  &.custom-select-arrow {
+    appearance: none;
+    -webkit-appearance: none!important;
+    -moz-appearance: none !important;
+    background-image: linear-gradient(45deg, transparent 50%, #007fc7 50%), 
+                      linear-gradient(135deg, #007fc7 50%, transparent 50%)!important;
+    background-position: calc(100% - 20px) calc(1em + 6px), calc(100% - 13px) calc(1em + 6px), calc(100% - 2.5em) 0.5em;
+    background-size: 6px 8px, 7px 8px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($primary,.05); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($primary,.8); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($primary,.9); 
+}
+
+.bg-light-2 {
+  background-color: #eaeaea!important;
+}
+
+.text-black {
+  color: #000000!important;
+}
+
+.text-faded {
+  color: #a7a9ac!important;
+}
+
+.font-min {
+  font-size: 0.75rem!important;
+}
+
+a {
+	color: #333;
+}
+
+a, button {
+  &:focus {
+    outline: none;
+  }
+}

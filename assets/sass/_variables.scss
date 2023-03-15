@@ -1,0 +1,105 @@
+// Variables
+
+// Restated Bootstrap Variables
+$white: #fff !default; /* palette */
+$gray-50: #fafafa !default;
+$gray-100: #F8F8F8 !default; /* palette */
+$gray-200: #E9E9E9 !default;
+$gray-300: #CBCACA !default;
+$gray-400: #BABABA !default;
+$gray-500: #AEACAC !default;
+$gray-600: #9e9e9e !default; /* palette */
+$gray-700: #585656 !default;
+$gray-800: #11173E !default; /* palette */
+$gray-900: #090D24 !default; /* palette */
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #EF435A !default;
+$orange: #fd7e14 !default;
+$yellow: #FFC107 !default;
+$green: #27AE60 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+//$primary: #034981 !default;
+$primary: #06549F !default;
+$secondary: #858585 !default;
+$tertiary: #27D17F !default;
+//$primary: #091d3d !default;
+//$secondary: #ffca04 !default;
+//$tertiary: #6faa42 !default;
+
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$modal-backdrop-bg: $gray-900;
+
+$btn-grad: linear-gradient(to right, $tertiary 0%, $secondary 51%, $tertiary 100%);
+$primary-grad: linear-gradient(to right, $primary, #29347c);
+
+$facebook: #4267b2;
+$twitter: #38A1F3;
+$linkedin: #0077B5;
+$google: #d34836;
+$instagram: #231F20;
+
+//Green Color
+$color-green: #3ea547 !default;
+
+//Gray Color
+$color-gray: #7f8185 !default;
+
+//Yellow Color
+$color-yellow: #ffdd00 !default;
+
+// $modal-fade-transform: scale(.8);
+
+// Pagination
+$pagination-padding-y:              .5rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-padding-y-sm:           .25rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+$pagination-line-height:            1.25 !default;
+
+// $pagination-color:                  $link-color !default;
+$pagination-bg:                     $gray-200 !default;
+$pagination-border-width:           0 !default;
+// $pagination-border-color:           $gray-300 !default;
+
+// $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
+// $pagination-focus-outline:          0 !default;
+
+// $pagination-hover-color:            $link-hover-color !default;
+// $pagination-hover-bg:               $gray-200 !default;
+// $pagination-hover-border-color:     $gray-300 !default;
+
+// $pagination-active-color:           $component-active-color !default;
+$pagination-active-bg:              $secondary !default;
+// $pagination-active-border-color:    $pagination-active-bg !default;
+
+// $pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-bg:            $gray-200 !default;
+// $pagination-disabled-border-color:  $gray-300 !default;
+
+$nav-tabs-border-color:             $gray-200 !default;
+$nav-tabs-link-hover-border-color:  transparent transparent lighten($secondary,10%) !default;
+$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-active-border-color: transparent transparent $secondary !default;
+
+$print-page-size:                   a4 !default;
+
+//Font Size
+$txt-size-xs: 18px;
+$txt-size-sm: 24px;
+$txt-size-lg: 36px;
+$txt-size-xl: 50px;
+$txt-size-xxl: 60px;

@@ -1,0 +1,22 @@
+@mixin btn-arrow {
+  &::after{
+    content: " \2192";
+    padding-left: 0.5rem;
+    display: inline-block;
+    @include transition;
+  }
+
+  &:hover::after{
+    transform: translate(5px);
+  }
+
+  &.arrow-secondary{
+    &::after{
+      color: $secondary;
+    }
+  }
+}
+
+@mixin bg-gray-600 {
+  background-color: $gray-600;
+}

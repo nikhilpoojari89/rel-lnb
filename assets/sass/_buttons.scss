@@ -1,0 +1,31 @@
+.btn.btn-se {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 0;
+    padding: .575rem 2rem;
+    font-size: 0.80rem;
+    font-weight: 300;
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #091d3d;
+        border-color: #ffffff;
+    }
+}
+
+.btn.btn-se-outline {
+    color: $primary;
+    background-color: $white;
+    border-color: #ededed;
+    border-radius: 0;
+    padding: .5rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
