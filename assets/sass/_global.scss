@@ -121,16 +121,44 @@ body{
   font-size: 1.125rem!important;
 }
 
+.font-19 {
+  font-size: 19px!important;
+}
+
 .font-20 {
   font-size: 1.25rem!important;
+}
+
+.font-22 {
+  font-size: 22px!important;
+}
+
+.font-23 {
+  font-size: 23px!important;
+}
+
+.font-24 {
+  font-size: 24px!important;
+}
+
+.font-26 {
+  font-size: 26px!important;
 }
 
 .font-36 {
   font-size: 2.25rem!important;
 }
 
+.font-44 {
+  font-size: 44px!important;
+}
+
 .font-54 {
   font-size: 3.375rem!important;
+}
+
+.font-57 {
+  font-size: 57px!important;
 }
 
 .font-60 {
@@ -141,8 +169,24 @@ body{
   font-size: 4rem!important;
 }
 
+.border-radius-6 {
+  border-radius: 6px!important;
+}
+
+.border-radius-10 {
+  border-radius: 10px!important;
+}
+
 .custom-border {
   border: 1px solid #DFDFEC!important;
+}
+
+.table-fixed {
+  table-layout: fixed!important;
+}
+
+.custom-shadow {
+  box-shadow: 0 2px 3px 3px rgba(0,0,0,.2)!important;
 }
 
 .font-smooth {
@@ -208,8 +252,32 @@ select {
   color: #a7a9ac!important;
 }
 
+.text-highlight {
+  color: #f8a41a!important;
+}
+
+.text-underline {
+  text-decoration: underline!important;
+}
+
+.custom-border-r {
+  border-right: 12px solid #f8a41a!important;
+}
+
 .font-min {
   font-size: 0.75rem!important;
+}
+
+.line-height-18 {
+  line-height: 1.8!important;
+}
+
+.line-height-2 {
+  line-height: 2!important;
+}
+
+.line-height-3 {
+  line-height: 3!important;
 }
 
 a {
