@@ -31,3 +31,52 @@ $(window).scroll(function(){
         $('header').removeClass('fixed-header');
     }
 });
+
+
+/****************** Login Dropdown Mobile JS ********************/
+// For profile icon click
+$('#profile-icon').on('click', function () {
+    $('.innerListMob').toggleClass('active');
+});
+
+
+/****************** Header JS ********************/
+$("header .prime-navbar .prime-menu .dropdown_Menu span.downArrow_Nav").click(
+    function(event) {
+    if ($(".innerList").is(":visible")) {
+        $(".innerList").slideUp({ duration: 500 });
+        $(
+        "header .prime-navbar .prime-menu .dropdown_Menu span.downArrow_Nav"
+        ).removeClass("upArrow_Nav");
+    }
+    if (
+        $(this)
+        .next(".innerList")
+        .is(":visible")
+    ) {
+        $(this)
+        .next(".innerList")
+        .slideUp({ duration: 500 });
+        $(
+        "header .prime-navbar .prime-menu .dropdown_Menu span.downArrow_Nav"
+        ).removeClass("upArrow_Nav");
+    } else {
+        $(this)
+        .next(".innerList")
+        .slideDown({ duration: 500 });
+        $(this).addClass("upArrow_Nav");
+    }
+    }
+);
+
+/****************** Mobile Menu Open/Close JS ********************/
+$("#nav-icon").click(function() {
+    var x = document.getElementById("mytopnav");
+    if (x.className === "navbar__menu--ul") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar__menu--ul";
+    }
+    $(this).toggleClass("open");
+    $(".prime-navbar").toggleClass("headerDown");
+});

@@ -29,15 +29,17 @@
   font-family: 'VAG-Rounded-Bold';
 }
 
-/************************ Zurch Font *********************/
-/* VAG Rounded Thin */
+/************************ Geometos Regular *********************/
 @font-face {
-  font-family: 'Zurch-Regular';
-  src: url('../../assets/fonts/zurch/ZURCH.TTF');
+  font-family: 'geometosregular';
+  src: url("../../assets/fonts/geometos/geometos-webfont.eot");
+  src: url("../../assets/fonts/geometos/geometos-webfontd41d.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/geometos/geometos-webfont.woff2") format("woff2"),url("../../assets/fonts/geometos/geometos-webfont.woff") format("woff"),url("../../assets/fonts/geometos/geometos-webfont.svg#geometosregular") format("svg");
+  font-weight: normal;
+  font-style: normal
 }
 
-.zurch-r {
-  font-family: 'Zurch-Regular';
+.geo-r {
+  font-family: 'geometosregular';
 }
 
 html,body{

@@ -89,7 +89,6 @@
 </section>
 
 
-
 <!--********************** Variant Section ***********************-->
 <section class="bg-white">
     <div class="container-fluid">
@@ -237,7 +236,7 @@
                         <h6 class="bg-primary text-white vag-r-bold font-18 pl-4 py-2 custom-shadow custom-border-r mb-2">1.What is the Reliance Nippon Life <span class="text-highlight">Nishchit Bhavishya?</span></h6>
                     </div>
                     <div class="col-xl-11">
-                        <p class="font-18 vag-r-light text-primary pl-5 line-height-18">The Reliance Nippon Life Nishchit Bhavishya Plan is a Non-Linked Non-Participating Individual Saving Life Insurance Plan that provides guaranteed benefits that ensure your financial needs and goals are taken care off while providing you and your family with long term protection from life's uncertainties.</p>
+                        <p class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">The Reliance Nippon Life Nishchit Bhavishya Plan is a Non-Linked Non-Participating Individual Saving Life Insurance Plan that provides guaranteed benefits that ensure your financial needs and goals are taken care off while providing you and your family with long term protection from life's uncertainties.</p>
                     </div>
                 </div>
 
@@ -247,7 +246,7 @@
                         <h6 class="bg-primary text-white vag-r-bold font-18 pl-4 py-2 custom-shadow custom-border-r mb-2">2.What are the <span class="text-highlight">plan options</span> available under Reliance Nippon Life <span class="text-highlight">Nishchit Bhavishya?</span></h6>
                     </div>
                     <div class="col-xl-11">
-                        <p class="font-18 vag-r-light text-primary pl-5 line-height-18">
+                        <p class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">
                             The plan offers a choice of two plan variants at inception of the policy.
                             <span class="d-block mt-3">
                                 <span class="vag-r-bold mr-2 var-1">a.  Variant 1:</span><br/>
@@ -267,7 +266,7 @@
                         <h6 class="bg-primary text-white vag-r-bold font-18 pl-4 py-2 custom-shadow custom-border-r mb-2">3.What is the <span class="text-highlight">Death Benefit</span> under Reliance Nippon Life <span class="text-highlight">Nishchit Bhavishya</span> Plan?</h6>
                     </div>
                     <div class="col-xl-11">
-                        <div class="font-18 vag-r-light text-primary pl-5 line-height-18">
+                        <div class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">
                             <span class="vag-r-bold text-underline d-block">During Premium Payment Term:</span>
                             In case of unfortunate death of the Life Assured provided the Policy is In-force i.e., all due premiums have been paid as on the date of death, the Claimant(s) shall receive higher of:
                             <ul class="pl-3">
@@ -334,7 +333,7 @@
                         <h6 class="bg-primary text-white vag-r-bold font-18 pl-4 py-2 custom-shadow custom-border-r mb-2">4.What is the <span class="text-highlight">Survival benefit</span> under Reliance Nippon Life <span class="text-highlight">Nishchit Bhavishya</span> Plan?</h6>
                     </div>
                     <div class="col-xl-11">
-                        <div class="font-18 vag-r-light text-primary pl-5 line-height-18">
+                        <div class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">
                             <ul class="pl-3">
 
                                 <li>
@@ -352,7 +351,7 @@
                                             <table class="table table-sm table-bordered bg-white text-center faqs-table">
                                                 <thead class="vag-r-bold font-17">
                                                     <tr>
-                                                        <th scope="col" width="300" class="bg-primary text-white">Policy Year</th>
+                                                        <th scope="col" width="300" class="policy-year-th bg-primary text-white">Policy Year</th>
                                                         <th scope="col" class="bg-primary text-white">Money Back Benefit (% of Annualized Premium)</th>
                                                     </tr>
                                                 </thead>
@@ -388,7 +387,7 @@
                         <h6 class="bg-primary text-white vag-r-bold font-18 pl-4 py-2 custom-shadow custom-border-r mb-2">5.What is the <span class="text-highlight">Maturity Benefit</span> under Reliance Nippom Life <span class="text-highlight">Nishchit Bhavishya</span> Plan?</h6>
                     </div>
                     <div class="col-xl-11">
-                        <div class="font-18 vag-r-light text-primary pl-5 line-height-18">
+                        <div class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">
                             On survival of the life assured till the end of the policy term, provided all due premiums are paid in full, Sum Assured on Maturity plus Fixed Loyalty Addition, if any, shall be payable.<br/>
                             Loyalty Addition, if any, shall be payable.<br/>
                             Where, Sum Assured on Maturity is equal to Base Sum Assured.<br/>
@@ -434,7 +433,6 @@
         </div>
     </div>
 </section>
-
 
 
 <?php include 'footer.php' ?>
