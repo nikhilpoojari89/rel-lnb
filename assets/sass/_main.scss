@@ -18,7 +18,7 @@ body {
 }
 
 
-/****** Banner Section ******/
+/****** Top Banner Section ******/
 
 .top-banner-bg {
 	background-image: url('../../public/images/png/maze-bg.png');
@@ -100,6 +100,90 @@ body {
 }
 
 
+/**************** Variant Tabs Css ****************/
+.variant-tabs {
+	nav {
+		.nav {
+			&.nav-tabs {
+				border: none;
+				color: $primary;
+				background: $white;
+				border-radius: 0;
+				a {
+					&.nav-item {
+						&.nav-link {
+							border: none;
+							padding: 18px 25px;
+							font-family: 'VAG-Rounded-Bold';
+							font-size: 20px;
+							box-shadow: inset 0 0 10px 10px rgba(1, 1, 1, 0.11);
+							color: $primary;
+							background: $white;
+							border-radius: 0;
+							&.active {
+								position: relative;
+								background-color: $primary;
+								color: $white;
+								&::after {
+									content: "";
+									position: absolute;
+									bottom: -40px;
+									left: 48%;
+									border: 15px solid transparent;
+									border-top-color: #faa619;
+								}
+							}
+							&:focus, &:hover {
+								border: none;
+								background-color: $primary;
+								color: $white;
+								border-radius:0;
+								transition: background 0.20s linear;
+							}
+							@include media-breakpoint-only(sm) {
+								padding: 12px 25px;
+								font-size: 16px;
+								&.active {
+									&::after {
+										content: "";
+										bottom: -32px;
+										border: 12px solid transparent;
+										border-top-color: #faa619;
+									}
+								}
+							}
+							@include media-breakpoint-down(xs) {
+								padding: 5px 25px;
+								font-size: 14px;
+								&.active {
+									&::after {
+										content: "";
+										bottom: -23px;
+										border: 8px solid transparent;
+										border-top-color: #faa619;
+									}
+								}
+							}
+						}
+						&.show {
+							.nav-link {
+								position: relative;
+								background-color: $primary;
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.tab-content{
+		border-top:5px solid #faa619;
+		border-bottom:5px solid #faa619;
+	}
+}
+
+
 /**************** Eligibility Criteria Section Css ****************/
 .ec-section {
 	.ec-title {
@@ -154,12 +238,6 @@ body {
 
 /**************** FAQs Section Css ****************/
 .faqs-section {
-	// .var-1 {
-	// 	width: 110px;
-	// }
-	// .var-2 {
-	// 	width: 120px;
-	// }
 	.ul-style-disc {
 		list-style-type: disc!important;
 	}

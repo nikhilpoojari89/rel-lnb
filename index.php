@@ -1,11 +1,12 @@
 <?php $title = "Reliance Nippon Life Nishchit Bhavishya"; ?>
 <?php include 'header.php' ?>
 
+
 <!--********************** Main Heading Banner Section ***********************-->
 <section class="custom-top-padding mb-0 pb-5 pb-lg-0 top-banner-bg">
     <div class="container-fluid px-0">
         <div class="row justify-content-between mx-3">
-            <div class="col-lg-7 col-xl-5 left-section order-lg-0 order-1">
+            <div class="col-md-7 col-xl-6 left-section order-lg-0 order-1">
                 <div class="form-card pt-5 pb-lg-5 pb-3">
                     <h1 class="text-primary main-title vag-r-bold font-weight-bold mb-3 letter-spacing-1 font-60">Reliance Nippon Life<br class="d-none d-xl-block"/> Nishchit Bhavishya</h1>
                     <span class="text-primary main-sub-title vag-r-bold font-16 letter-spacing-05 font-smooth d-inline-block py-1">A Non-Linked, Non-Participating, Individual Savings Life Insurance Plan</span>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-xl-7 right-section align-self-center order-lg-1 order-0">
+            <div class="col-md-5 col-xl-6 right-section align-self-center order-lg-1 order-0">
                 <div class="text-center mt-4">
                     <img src="./public/images/png/home-banner.png" class="img-fluid" alt="Protect" width="" title="Protect" />
                 </div>
@@ -89,18 +90,45 @@
 </section>
 
 
-<!--********************** Variant Section ***********************-->
+<!--********************** Variant Tabs Section ***********************-->
 <section class="bg-white">
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="variant-tabs">
+                    <nav>
+                        <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-variant1-tab" data-toggle="tab" href="#nav-variant1" role="tab" aria-controls="nav-variant1" aria-selected="true">Variant 1</a>
+                            <a class="nav-item nav-link" id="nav-variant2-tab" data-toggle="tab" href="#nav-variant2" role="tab" aria-controls="nav-variant2" aria-selected="false">Variant 2</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-variant1" role="tabpanel" aria-labelledby="nav-variant1-tab">
+                            <img src="./public/images/png/variant/variant-1.png" class="img-fluid" alt="Variant 1">
+                        </div>
+                        <div class="tab-pane fade" id="nav-variant2" role="tabpanel" aria-labelledby="nav-variant2-tab">
+                            <img src="./public/images/png/variant/variant-2.png" class="img-fluid" alt="Variant 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--********************** Variant Section OLD ***********************-->
+<!-- <section class="bg-white">
     <div class="container-fluid">
         <div class="row">
-            <!--****** Variant 1 ******-->
+            
             <div class="col-12 px-0">
                 <div>
                     <img src="./public/images/png/variant/variant-1.png" class="img-fluid" alt="Variant 1">
                 </div>
             </div>
 
-            <!--****** Variant 2 ******-->
+            
             <div class="col-12 px-0">
                 <div>
                     <img src="./public/images/png/variant/variant-2.png" class="img-fluid" alt="Variant 2">
@@ -109,7 +137,7 @@
 
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!--********************** Eligible and Why RNLI Section ***********************-->
@@ -156,14 +184,14 @@
                                 <td class="py-1 bg-white text-primary text-center">86</td>
                                 <td class="py-1 bg-white text-primary text-center">92</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <th scope="row" width="350" class="py-1 bg-transparent text-white">Minimum Premium (Rs.)</th>
                                 <td colspan="6" class="py-1 bg-white text-primary text-center">Rs. 34,500</td>
                             </tr>
                             <tr>
                                 <th scope="row" width="350" class="py-1 bg-transparent text-white">Maximum Premium (Rs.)</th>
                                 <td colspan="6" class="py-1 bg-white text-primary text-center">No Limit, Subject to Board Approved Underwriting Policy</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <th scope="row" width="350" class="py-1 bg-transparent text-white">Premium Payment Frequency</th>
                                 <td colspan="6" class="py-1 bg-white text-primary text-center">Yearly, Half-yearly, Quarterly, Monthly</td>
@@ -249,11 +277,11 @@
                         <p class="font-18 vag-r-light text-primary pl-3 pl-sm-5 pr-3 line-height-18">
                             The plan offers a choice of two plan variants at inception of the policy.
                             <span class="d-block mt-3">
-                                <span class="vag-r-bold mr-2 var-1">a.  Variant 1:</span><br/>
+                                <span class="vag-r-bold mr-2">a.  Variant 1:</span><br/>
                                 <span>This variant provides income benefit post premium payment term along with a lump sum maturity benefit.</span>
                             </span>
                             <span class="d-block mt-3">
-                                <span class="vag-r-bold mr-2 var-2">b.  Variant 2:</span><br/>
+                                <span class="vag-r-bold mr-2">b.  Variant 2:</span><br/>
                                 <span>This variant provides two money back payouts at 4th and 8th year before the income benefit starts from the 12th year and a lumpsum benefit is also paid at maturity.</span>
                             </span>
                         </p>
