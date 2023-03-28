@@ -2,6 +2,14 @@ body {
 	overflow-x: hidden!important;
 	background: #F9FAFF;
 	overflow-y: overlay!important;
+	&.main-body {
+		@media (min-width: 768px) and (max-width: 1024px) {
+			padding-top: 85px!important;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-top: 50px!important;
+		}
+	}
 }
 
 /********Global Css*********/
@@ -26,7 +34,7 @@ body {
     background-size: cover;
 	background-color: $white;
 	border-bottom: 8px solid $primary;
-    padding-bottom: 20px!important;
+    // padding-bottom: 20px!important;
 	.main-title {
 		@include media-breakpoint-only(md) {
 			font-size: 3rem!important;
@@ -44,6 +52,11 @@ body {
 		}
 	}
 	&.custom-top-padding {
+		@include media-breakpoint-up (md) {
+			background-image: url('../../public/images/png/home-banner.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 		@media screen and (max-width: 1024px) {
 			padding: 0;
 		}

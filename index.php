@@ -3,10 +3,10 @@
 
 
 <!--********************** Main Heading Banner Section ***********************-->
-<section class="custom-top-padding mb-0 pb-5 pb-lg-0 top-banner-bg">
+<section class="custom-top-padding mb-0 pb-0 top-banner-bg">
     <div class="container-fluid px-0">
         <div class="row justify-content-between mx-3">
-            <div class="col-md-7 col-xl-6 left-section order-lg-0 order-1">
+            <div class="col-md-7 col-xl-6 left-section order-md-0 order-1">
                 <div class="form-card pt-5 pb-lg-5 pb-3">
                     <h1 class="text-primary main-title vag-r-bold font-weight-bold mb-3 letter-spacing-1 font-60">Reliance Nippon Life<br class="d-none d-xl-block"/> Nishchit Bhavishya</h1>
                     <span class="text-primary main-sub-title vag-r-bold font-16 letter-spacing-05 font-smooth d-inline-block py-1">A Non-Linked, Non-Participating, Individual Savings Life Insurance Plan</span>
@@ -75,13 +75,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-xl-6 right-section align-self-center order-lg-1 order-0">
+            <div class="col-md-5 col-xl-6 right-section align-self-center order-md-1 order-0">
                 <div class="text-center mt-4">
-                    <img src="./public/images/png/home-banner.png" class="img-fluid" alt="Protect" width="" title="Protect" />
+                    <!-- <img src="./public/images/png/home-banner.png" class="img-fluid" alt="Protect" width="" title="Protect" /> -->
                 </div>
             </div>
         </div>
-        <div class="row mx-0">
+        <div class="row mx-0 bg-white py-4">
             <div class="col-12">
                 <img src="./public/images/png/home-banner-bottom.png" class="img-fluid px-2" alt="Steps">
             </div>
